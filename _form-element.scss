@@ -1,0 +1,48 @@
+.input-container{
+
+
+  input{
+    font-family: Nunito Sans-Regular, sans-serif;
+    text-transform: uppercase;
+    color: $gray;
+    font-size: 1.125rem;
+    border: none;
+    border-bottom: 1px solid $blue;
+
+
+
+  }
+
+  input.error{
+
+      border-bottom: 1px solid $red;
+
+
+
+  }
+
+
+}
+
+.warning-container{
+
+  display: none;
+  align-items: baseline;
+
+  .cross{
+    color: $red;
+    margin-right: 10px;
+  }
+
+  p{
+    font-family: Nunito Sans-Bold, sans-serif;
+    color: $red;
+    font-size: 0.75rem;
+  }
+
+
+
+
+}
+
+

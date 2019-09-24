@@ -1,0 +1,232 @@
+
+@import 'sass/mixin';
+$vertical-margin: 80px;
+$blue: #009FC1;
+$gray: #9b9b9b;
+$red: #D0021B;
+
+@font-face {
+  font-family:'Nunito Sans-Bold';
+  src: url("assets/fonts/NunitoSans-Black.ttf");
+
+}
+
+@import "button";
+@import "checkbox";
+@import "form-element";
+
+body{
+  background-image: url("assets/img/background.png") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-elements{
+  .header{
+    justify-content: center;
+    @include media((
+            margin-bottom: (xs:$vertical-margin/4, sm:$vertical-margin/2),
+            margin-top: (xs:$vertical-margin/4, sm:$vertical-margin/2),
+    ));
+  }
+
+  .col-xl-3{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+    font-size: 1.25rem;
+    padding: 5px;
+    background-color: white;
+    border-color: $gray;
+    border-radius: 4px;
+    color: $gray;
+    font-family:   Nunito Sans-Regular, sans-serif;
+
+    img{
+      margin-right: 6px;
+    }
+
+    span{
+      line-height: 0;
+    }
+  }
+
+  .dropdown-item{
+    font-family:  Nunito Sans-Regular, sans-serif;
+    color: $gray;
+    &:hover{
+      color: $blue;
+
+    }
+
+    &:active{
+      background-color: $blue;
+    }
+  }
+}
+
+.section-title {
+  justify-content: center;
+  margin-bottom: 40px;
+
+  .title{
+
+    h1{
+      font-family: Nunito Sans-Bold, sans-serif;
+      font-size: 1.5rem;
+      color: $gray;
+      text-transform: uppercase;
+    }
+
+  }
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  .form-wrapper{
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 4px;
+    box-shadow: 0 1px 11px 0 $gray;
+
+    .form-content{
+      padding: 0 40px;
+    }
+  }
+  .enter-wrapper{
+    margin-top: 40px;
+    justify-content: center;
+    margin-bottom: 40px;
+    .enter-container{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      h2{
+        font-family: Nunito Sans-Bold, sans-serif;
+        color: $blue;
+        text-transform: uppercase;
+        text-decoration: underline;
+        @include media((
+                font-size: (xs:1rem, md:1.5rem),
+        ));
+      }
+      a.registration{
+        opacity: 0.5;
+        font-family: Nunito Sans-Regular, sans-serif;
+        color: $blue;
+        @include media((
+                font-size: (xs:1 rem, md:1.5rem),
+        ));
+      }
+    }
+  }
+  .error-wrapper{
+    display: none;
+
+    .error-container{
+      display: flex;
+
+
+
+
+      .cross{
+        color: $red;
+        margin-right: 10px;
+      }
+
+      p{
+        font-family: Nunito Sans-Regular, sans-serif;
+        font-size: 1rem;
+        color: $red;
+        text-transform: uppercase;
+      }
+    }
+  }
+  input{
+    width: 100%;
+    &:focus{
+      outline: none;
+      border: none;
+      border-radius: 4px;
+    }
+  }
+
+  .email-wrapper{
+    margin-bottom: 40px;
+  }
+
+  .pass-wrapper{
+    margin-bottom: 40px;
+  }
+}
+
+.remember-wrapper{
+  margin-bottom: 40px;
+}
+
+.enter-wrapper{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.fogot-password-wrapper{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  a.error{
+    font-family: Nunito Sans-Regular, sans-serif;
+    color: $red;
+
+  }
+
+  a{
+    font-family: Nunito Sans-Regular, sans-serif;
+    color: $blue;
+
+  }
+}
+
+.items-container{
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 40px;
+
+  p{
+    font-family: Nunito Sans-Regular, sans-serif;
+    color: $gray;
+    margin-right: 10px;
+    @include media((
+            font-size: (xs:0.7rem, md:1rem),
+    ));
+  }
+
+  img{
+    margin-right: 10px;
+  }
+}
+
+.support-section{
+  justify-content: center;
+
+  a{
+    font-family: Nunito Sans-Regular, sans-serif;
+    color: $blue !important;
+    text-decoration: underline !important;
+  }
+}
+
+
+
+
+

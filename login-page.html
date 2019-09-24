@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>login-page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="login-page.css">
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <section class="header-elements">
+        <div class="row header">
+            <div class="col-xl-3">
+                <div class="logo">
+                    <img src="assets/img/sendpulse-logo.png">
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/img/language.png">
+                        <span>RU</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">Русский</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="big-title">
+        <div class="row section-title">
+            <div class="title">
+                <h1>Личный кабинет</h1>
+            </div>
+        </div>
+    </section>
+
+    <form class="form">
+        <div class="col-xl-3 form-wrapper">
+            <div class="form-content">
+                <div class="enter-wrapper">
+                    <div class="enter-container">
+                        <h2 class="enter">Вход</h2>
+                        <a class="registration" href="https://sendpulse.ua/register">Регистрация</a>
+                    </div>
+                </div>
+
+                <div id="error-show" class="error-wrapper wow fadeIn" >
+                    <div class="error-container">
+                        <div class="cross">
+                            &times;
+                        </div>
+                        <p>Неверный e-mail или пароль</p>
+
+                    </div>
+
+                </div>
+
+                <div class="email-wrapper">
+
+                        <div class="element-container">
+                            <div class="input-container">
+                                <input  id="redline" type="text" name="e-mail" placeholder="e-mail" class="wow fadeIn">
+                            </div>
+                            <div id="warning" class="warning-container wow fadeIn">
+                                <div class="cross">
+                                    &times;
+                                </div>
+                                <p>Неккоректный e-mail адресс</p>
+
+                            </div>
+
+                        </div>
+
+                </div>
+
+                <div class="pass-wrapper">
+
+                        <div class="element-container">
+                            <div class="input-container">
+                                <input id="redlines" type="text" name="e-mail" placeholder="ПАРОЛЬ" class="wow fadeIn">
+                            </div>
+
+
+                        </div>
+
+                </div>
+
+                <div class="remember-wrapper">
+
+                        <div class="checkbox-container">
+
+                            <label class="container">
+                                <span class="text">Запомнить меня</span>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </div>
+
+
+                </div>
+
+                <div class="enter-wrapper">
+                    <div class="button-container">
+                        <button type="button" class="btn btn-primary" >ВОЙТИ</button>
+                    </div>
+                </div>
+
+                <div class="fogot-password-wrapper">
+                    <div class="text-wrapper">
+                        <a id="reminder" href="https://login.sendpulse.com/forgot/">Забыли пароль?</a>
+                    </div>
+
+                </div>
+
+                <div class="social-media-wrapper">
+
+                        <div class="items-container">
+                            <p>Войти с помощью</p>
+                          <a href="https://www.facebook.com"><img src="assets/img/facebook.png"></a>
+                           <a href="https://www.google.com.ua"><img src="assets/img/google.png"></a>
+                        </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </form>
+
+    <section class="call-support">
+        <div class="row support-section">
+            <div class="support">
+                <a href="https://sendpulse.ua/support">Техническая поддержка</a>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script>new WOW().init();</script>
+
+</body>
+</html>

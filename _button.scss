@@ -1,0 +1,33 @@
+.btn-primary {
+
+  background-color: $blue;
+  border-color: $blue;
+
+  &:hover{
+    box-shadow: none;
+    background-color: #006f90 !important;
+    border-color: #006f90 !important;
+
+
+  }
+
+  &:focus{
+    box-shadow: none;
+    background-color: #008aab;
+    border-color: #008aab;
+  }
+
+  &:active{
+    box-shadow: none;
+    background-color: #006f90 !important;
+    border-color: #006f90 !important;
+
+  }
+}
+
+.btn{
+  font-family: Nunito Sans-Bold, sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-radius: 0.625rem;
+}
